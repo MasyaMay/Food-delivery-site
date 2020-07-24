@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="flex-wrapper">
+        <div class="calculator-content">
+            <div class="calculator-content-title">
+                <h1>Авто по возможностям</h1>
+            </div>
+            <div class="calculator-content-body">
+                <div class="calculator-content-body-left">
+                    <div class="calculator-content-body-left-inputs">
+
+
+                        <div class="input-wrapper">
+                            <div class="title">Сколько у вас есть сейчас?</div>
+                            <div class="input">
+                                <input type="text" id="min" value="500000" data-min="0" data-max="2000000" class="input-form">
+                                <input type="text" id="max" value="30000" data-min="5000" data-max="100000" class="input-form">
+                                <div id="range" class="input-range" data-step="5000"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="calculator-content-body-right">
+                    <div class="final-results-wrapper">
+                        <div class="final-result-item">
+                            <div class="title">Рассчитывайте на</div>
+                            <div class="value" id="amount-of-credit">0<span>₽</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   <script src="InputRange.js"></script> 
+</body>
+</html>
